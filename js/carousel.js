@@ -13,7 +13,6 @@ const serviceCards = Array.from(servicesTrack.children);
 const serviceCardWidth = serviceCards[0].getBoundingClientRect().width;
 const servicesIndicators = document.querySelector('.services__nav');
 const serviceCardsDots = Array.from(servicesIndicators.children);
-console.log(serviceCardsDots);
 
 /*---------------------------------------------------------------------------*/
 
@@ -23,6 +22,8 @@ console.log(serviceCardsDots);
 const SetServiceCardPosition = (card, index) => {
     card.style.left = serviceCardWidth * index + 'px';
 }
+
+let viewportWidth = document.documentElement.clientWidth || window.innerWidth;
 
 serviceCards.forEach(SetServiceCardPosition);
 
@@ -36,7 +37,6 @@ servicesIndicators.addEventListener('click', e => {
     const currentDot = servicesIndicators.querySelector('.current-card');
     const targetIndex = serviceCardsDots.findIndex(dot => dot === targetDot);
     const targetCard = serviceCards[targetIndex];
-    console.log(targetCard);
 
     moveToCard(servicesTrack, currentCard, targetCard);
     updateCardDots(currentDot, targetDot);
@@ -58,7 +58,7 @@ const updateCardDots = (currentDot, targetDot) => {
 
 /* Arrange portfolio slides next to each other. We achieve this by taking the const slideWidth multiplying this by the slides index number and adding px. We than apply this number to the style.left, and pass this function as an argument to the statement below resulting in each slide (except the 1st) being shifted left.*/
 const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 10 + 'px';
+    slide.style.left = slideWidth * index + 'px';
 }
 
 // Then we use function above in a forEach loop to set the slides position

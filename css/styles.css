@@ -70,18 +70,18 @@ li {
 }
 
 /* Grid Setup */
-.site__wrapper {
+/* .site__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto, minmax(75px, auto));
   gap: 5px;
   width: 100%;
-}
+} */
 
 /* Section common styling */
 section {
   margin: 25px 0;
-  padding: 0 25px
+  padding: 25px 25px
 }
 
 /* Navigation */
@@ -133,14 +133,13 @@ nav {
 
 /* Banner Section */
 .banner-section {
-  grid-row: 2;
   padding: 15px 25px;
 }
 
 .heroImg img {
   width: 200px;
   height: auto;
-  border-radius: 45%;
+  border-radius: 50%;
 }
 
 .leading-text {
@@ -162,9 +161,6 @@ nav {
 }
 
 /* Services Section */
-.services {
-  grid-row: 3;
-}
 
 .services__carousel {
   position: relative;
@@ -186,7 +182,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-row: 4;
+  /* grid-row: 4; */
 }
 
 .carousel__indicator, .services__indicator {
@@ -201,9 +197,8 @@ nav {
 
 /* Recent Projects Section */
 .portfolio {
-  grid-row: 5;
+  /* grid-row: 4; */
 }
-
 .carousel {
   position: relative;
   height: 350px;
@@ -266,16 +261,66 @@ absolute positioning.  */
 .is-hidden { display: none; }
 
 hr {
-  grid-row: 6;
   margin-top: 50px;
 }
 
 footer {
-  grid-row: 7;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
 }
 
+/* Media break point for tablets 480px - 768px */
 
+/* @media (481px <= width <= 768px) {
+  .site__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav {    
+    grid-column: 1 / 4;
+  }
+
+  .banner-section {
+    grid-column: 1 / 4;
+  }
+
+  .heroImg {
+    grid-column: 1 / 2;
+  }
+
+  .heroImg img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .services {
+    grid-column: 1 / 4;
+  }
+
+  div.service-card:nth-child(1) {
+    margin-left: -10px;
+   }
+
+  div.service-card:nth-child(2) {
+   margin-left: -50px;
+  }
+
+  .services__nav {
+    display: none;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .portfolio {
+    grid-column: 1 / 4;
+  }
+
+  hr, footer {
+    grid-column: 1 / 4;
+  } 
+ } */

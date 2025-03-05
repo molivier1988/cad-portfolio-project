@@ -8,16 +8,16 @@ const navIndicators = document.querySelector('.carousel__nav');
 const dots = Array.from(navIndicators.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-
-// Portfolio Section------------------------------------------------------------
-
 /* Arrange portfolio slides next to each other. We achieve this by taking the const slideWidth multiplying this by the slides index number and adding px. We than apply this number to the style.left, and pass this function as an argument to the statement below resulting in each slide (except the 1st) being shifted left.*/
+
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 }
 
 // Then we use function above in a forEach loop to set the slides position
 slides.forEach(setSlidePosition);
+
+window.onresize = setSlidePosition;
 
 // Move slides when left or right buttons are clicked
 const moveToSlide = (track, currentSlide, targetSlide) => {

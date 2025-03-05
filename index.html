@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Front5Design</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/269ab36e27.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="site__wrapper">
+      <!-- Navigation Section -->
+      <nav>
+        <img src="resources/images/f5logo.svg" alt="company logo" />
+        <ul class="menu">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger">
+          <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
+          <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff"></i>
+        </button>
+      </nav>
+
+      <!-- Banner Section -->
+      <section class="banner-section">
+        <div class="heroImg">
+          <img src="resources/images/banner.jpg" alt="" />
+        </div>
+        <div class="heroText">
+          <h2>Hello I'm</h2>
+          <h1>Mark Olivier</h1>
+          <p class="leading-text">Front End Web Developer</p>
+          <button class="button">
+            Get Resume <i class="fa-solid fa-file-arrow-down fa-sm"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services">
+        <h4>My Services</h4>        
+          <div class="service-card">
+            <h5>
+              <i
+                class="fa-solid fa-layer-group fa-xl"
+                style="color: #ffffff"
+              ></i
+              >UX Design
+            </h5>
+            <ul class="service-listings">
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >User Flow
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >Wireframing
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >Prototyping
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >Responsive Design
+              </li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h5>
+              <i class="fa-solid fa-code fa-xl" style="color: #ffffff"></i
+              >Development
+            </h5>
+            <ul class="service-listings">
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >HTML/CSS
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >JavaScript
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >React
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >NodeJS
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-angles-right fa-2xs"
+                  style="color: #ffffff"
+                ></i
+                >Python
+              </li>
+            </ul>
+          </div>
+      </section>
+      
+      <!-- Recent Projects -->
+      <section class="portfolio">
+        <h4>Recent Projects</h4>        
+        <div class="carousel">
+          <button class="carousel__btn carousel__btn--left is-hidden"><i class="fa-solid fa-chevron-left fa-2xl" style="color: #fff;"></i></i></button>
+          <div class="carousel__track-container">
+            <div class="carousel__track">
+              <div class="carousel__slide current-slide">
+                <img class="carousel__img" src="resources/images/coffee-shop.jpg" alt="coffee shop" />
+                <h5>Coffee Club</h5>
+                <p>Small Business | Online Ordering | Online Payments</p>
+              </div>
+              <div class="carousel__slide">
+                <img class="carousel__img"
+                  src="resources/images/dog-grooming.jpg" alt="dog grooming"/>
+                <h5>Pawfection</h5>
+                <p>Small Business |Online Bookings | Online Payments</p>
+              </div>
+              <div class="carousel__slide">
+                <img class="carousel__img" src="resources/images/rugby club.jpg" alt="rugby club" />
+                <h5>Sutton Coldfield RFC</h5>
+                <p>Sports Club | News & Fixtures | Events Booking</p>
+              </div>
+            </div>          
+          </div>          
+          <button class="carousel__btn carousel__btn--right"><i class="fa-solid fa-2xl fa-chevron-right" style="color: #ffffff;"></i></button>
+          <div class="dotNav carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>
+      </section>
+
+      <hr style="width: 100%;">
+      
+      <!-- Footer -->
+      <footer>
+        <div>
+          <i class="fa-solid fa-copyright fa-2xs" style="color: #ffffff;"></i> 2025 Front5Design
+        </div>
+        <img src="resources/images/f5logo.svg" alt="company logo">
+      </footer>
+
+    </div>
+
+    <!-- Links to JS scripts -->
+    <script src="js/carousel.js"></script>
+    <script src="js/hamburger-menu.js"></script>
+  </body>
+</html>
